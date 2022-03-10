@@ -13,6 +13,9 @@ const jedi = [];
         */
 jedi [jedi.length] = "Luke" ;
 console.log(jedi);
+/* OR
+jedi[0] = "Luke" ;
+*/
 
 // 1c. Using the Push method add "Obi-Wan Kenobi" to the jedi array
         /* Notes: 
@@ -57,6 +60,9 @@ console.log(jedi);
           console.log(allLOTR.slice(3, 6));
       */
 console.log(jedi.slice(1));
+/* OR
+jedi.shift();
+*/
 
 
 // 2a. Create a const variable named sithLords and set the value of the variable to the following array items "Darth Vader", "Darth Sidious", and "Darth Maul"
@@ -114,7 +120,9 @@ const droids = {
         (variable name.value);
         console.log(userInfo.first); // Christine
       */
-console.log(droids.astromech); // R2-D2
+// !console.log(droids.astromech); // R2-D2
+//! NEEDED to use brackets
+console.log(droids["astromech"]);
 
 
 // 3c. Display "C-3PO" from the droids variable/object in terminal/console using dot "." (You will need a console log for this)
@@ -130,6 +138,8 @@ console.log(droids.protocol); // C-3PO
       */
 droids["assassin"] = "IG-11";
 console.log(droids["assassin"]);
+//or
+//droids.assassin = "IG-11";
 
 // BONUS
 
@@ -141,6 +151,8 @@ console.log(droids["assassin"]);
       */
 // console.log(starWarsVillains);
 console.log("Darth Vader"[6]);
+// OR
+console.log(starWarsVillians[0,6]);
 
 // B-5. Using only negative numbers display "Darth Sidious" from the sithLords array using Slice (You will need a console log for this)
       /* Notes
@@ -151,6 +163,8 @@ console.log("Darth Vader"[6]);
         console.log(allLOTR.slice(3));
       */
 console.log(sithLords.slice(-2,-1));
+// OR
+console.log(starWarsVillians.slice(-4, -3));
 
 // B-6a. Create a const variable named starWarsMovies and set the value to an array of three objects (AKA An array with three items in it and each item is a separate object). Use the following keys and values for each object in the array: 1st OBJECT (episodeOne: "The Phantom Menace", episodeTwo: "Attack of the Clones", and episodeThree: "Revenge of the Sith"). 2nd OBJECT (episodeFour: "A New Hope", episodeFive: "The Empire Strikes Back", and episodeSix: "Return of the Jedi"). 3rd OBJECT (episodeSeven: "The Force Awakens", episodeEight: "The Last Jedi", and  episodeNine: "The Rise of Skywalker"). I would suggest using some copy and paste on this one.
     /* Notes
@@ -187,4 +201,7 @@ const starWarsMovies = [
 console.log(starWarsMovies);
 
 // B-6b. Using an array method add the following string values ("Solo" and "Rogue One") as items in the starWarsMovies array between the 1st and 2nd objects (AKA Items) in the starWarsMovies array.
+//! DID NOT COMPLETE
+//! ANSWER per Class Review
+starWarsMovies.splice(1,0,"Solo", "Rogue One");
 
